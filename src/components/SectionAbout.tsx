@@ -26,9 +26,28 @@ const SectionAbout: React.FC = () => {
             </div>
             <div className="col-1-of-2">
             <div className="composition">
-                <img src={require('../img/nat-1-large.jpg')} alt="Photo1" className="composition__photo composition__photo--p1"/>
+
+                <img srcSet={`${require('../img/nat-1.jpg')} 300w, ${require('../img/nat-1-large.jpg')} 1000w`} 
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                    alt="Photo1" 
+                    className="composition__photo composition__photo--p1" 
+                    src={require('../img/nat-1-large.jpg')} />
+
+                <img srcSet={`${require('../img/nat-2.jpg')} 300w, ${require('../img/nat-2-large.jpg')} 1000w`} 
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                    alt="Photo2" 
+                    className="composition__photo composition__photo--p2" 
+                    src={require('../img/nat-2-large.jpg')} />
+
+                <img srcSet={`${require('../img/nat-3.jpg')} 300w, ${require('../img/nat-3-large.jpg')} 1000w`} 
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                    alt="Photo3" 
+                    className="composition__photo composition__photo--p3" 
+                    src={require('../img/nat-3-large.jpg')} />
+
+                {/* <img src={require('../img/nat-1-large.jpg')} alt="Photo1" className="composition__photo composition__photo--p1"/> 
                 <img src={require('../img/nat-2-large.jpg')} alt="Photo2" className="composition__photo composition__photo--p2"/>
-                <img src={require('../img/nat-3-large.jpg')} alt="Photo3" className="composition__photo composition__photo--p3"/>
+                <img src={require('../img/nat-3-large.jpg')} alt="Photo3" className="composition__photo composition__photo--p3"/> */}
             </div>
             </div>
         </div>

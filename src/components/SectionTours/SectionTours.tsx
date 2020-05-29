@@ -4,7 +4,7 @@ import Card from './Card';
 
 const SectionTours: React.FC = () => {
     return (
-        <section className="section-tours">
+        <section className="section-tours" id="section-tours">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
                 Most popular tours

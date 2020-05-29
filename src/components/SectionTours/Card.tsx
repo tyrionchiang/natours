@@ -20,19 +20,19 @@ const Card: React.FC<CardProps> = props => {
             </h4>
             <div className="card__details">
                 <ul>
-                    {props.list.map(detail => (
-                        <li>{detail}</li>
+                    {props.list.map((detail, index) => (
+                        <li key={index}>{detail}</li>
                     ))}
                 </ul>
             </div>
             </div>
-            <div className="card__side card__side--back card__side--back-1">
+            <div className={ "card__side card__side--back card__side--back-"+props.styleNum }>
             <div className="card__cta">
                 <div className="card__price-box">
                 <p className="card__price-only">Only</p>
                 <p className="card__price-value">${props.price}</p>
                 </div>
-                <a href="#" className="btn btn--white">Book now!</a>
+                <a href="#popup" className="btn btn--white">Book now!</a>
             </div>
             </div>
         </div>       
